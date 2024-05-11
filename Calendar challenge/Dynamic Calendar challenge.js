@@ -76,7 +76,7 @@ const createHtml = (data) => {
             if (isWeekend) classString += ` table__cell_weekend`; // Added space before class name
             if (isAlternate) classString += ` table__cell_alternate`; // Added space before class name
             
-            inner += addCell(inner, classString, value);
+            inner = addCell(inner, classString, value);
         }
         result += `<tr>${inner}</tr>`;
     }
